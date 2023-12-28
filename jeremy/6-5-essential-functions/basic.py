@@ -35,7 +35,7 @@ cv.imshow('Eroded', eroded)
 # erode is inverse of dilation
 
 # Rsize
-resized = cv.resize(img, (500, 500), interpolation=CV>INTER_AREA) # interpolation = INTER_AREA, best for scaling down, INTER_LINEAR best for upscaling or INTER_CUBIC (slowest, but higher quality)
+resized = cv.resize(img, (500, 500), interpolation=cv.INTER_AREA) # interpolation = INTER_AREA, best for scaling down, INTER_LINEAR best for upscaling or INTER_CUBIC (slowest, but higher quality)
 cv.imshow('Resized', resized)
 
 # Cropping
